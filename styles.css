@@ -1,0 +1,97 @@
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+@media (min-width: 30rem) {
+  .navlist {
+    list-style-type: none;
+    display: grid;
+    margin: 0;
+    padding: 2rem;
+    font-size: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+}
+
+.navlist a:link,
+.navlist a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.side-by-side {
+  display: grid;
+  /* grid-template-columns: 1fr auto; */
+  align-items: start;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem 3rem;
+}
+
+.top-and-bottom {
+  display: grid;
+  justify-items: center;
+}
+
+.long-text > p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+div.side-by-side img {
+  object-fit: cover;
+  width: 80%;
+}
+
+figure.item {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  background: lightgray;
+  padding: 2rem;
+  margin: 0 15% 0 15%;
+}
+
+figure img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.caption {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.contact {
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  justify-content: center;
+  justify-items: center;
+  row-gap: 1rem;
+  background-color: rgb(150, 156, 161);
+  color: rgb(39, 39, 39);
+  padding: 3rem;
+  margin: 0 15% 0 15%;
+  border-radius: 10px;
+}
+
+.contact h2 {
+  font-weight: normal;
+  font-size: 2rem;
+  font-size: 2vw;
+  object-fit: cover;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
